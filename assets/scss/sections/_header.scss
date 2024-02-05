@@ -1,0 +1,122 @@
+@use "../utils" as *;
+
+/*----------------------------------------*/
+/*  09. header CSS START
+/*----------------------------------------*/
+
+header {
+  padding: 30px 0;
+  z-index: 9;
+  .container {
+    @include flexbox(center, space-between);
+    @media #{$md,$sm,$xs} {
+      display: block;
+      position: relative;
+    }
+    .menus {
+      @include flexbox(center, space-between);
+      gap: 40px;
+      li {
+        @include transition(0.5s);
+        &.current {
+          color: var(--cf-theme-primary);
+          position: relative;
+          &::after {
+            @include transition(0.5s);
+            content: "";
+            background: var(--cf-theme-primary);
+            height: 6px;
+            width: 6px;
+            border-radius: 10px;
+            margin-left: 5px;
+            display: inline-block;
+          }
+        }
+      }
+      @media #{$md,$sm,$xs} {
+        display: none;
+        margin-top: 20px;
+        li {
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .social-icons {
+      @media #{$md,$sm,$xs} {
+        display: none;
+      }
+    }
+    .toggle {
+      position: relative;
+      width: 40px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      overflow: hidden;
+      display: none;
+      position: absolute;
+      right: 15px;
+      top: 0;
+      span {
+        position: absolute;
+        width: 40px;
+        height: 3px;
+        background: var(--cf-theme-white);
+        border-radius: 10px;
+        transition: 0.5s;
+        right: 0;
+        &:nth-child(1) {
+          transform: translateY(-10px);
+          width: 25px;
+        }
+        &:nth-child(2) {
+          transform: translateY(10px);
+          width: 15px;
+        }
+      }
+      @media #{$md,$sm,$xs} {
+        display: flex;
+      }
+    }
+  }
+  &.active {
+    max-height: 100%;
+    background: var(--cf-theme-dark);
+    padding-bottom: 30px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+    .toggle {
+      span:nth-child(1) {
+        width: 30px;
+        -webkit-transform: translateY(0) rotate(45deg);
+        transform: translateY(0) rotate(45deg);
+        -webkit-transition-delay: 0.125s;
+        transition-delay: 0.125s;
+      }
+      span:nth-child(2) {
+        width: 30px;
+        -webkit-transform: translateY(0) rotate(315deg);
+        transform: translateY(0) rotate(315deg);
+        -webkit-transition-delay: 0.25s;
+        transition-delay: 0.25s;
+      }
+      span:nth-child(3) {
+        -webkit-transform: translateX(60px);
+        transform: translateX(60px);
+      }
+    }
+  }
+  &.fixed {
+    position: fixed !important;
+    left: 0;
+    margin: auto;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0 60px 0 rgb(0 0 0 / 7%);
+    z-index: 99;
+    box-shadow: 0px 0px 16px 0px rgb(0 0 0 / 7%);
+    animation: sticky 1s;
+    background: var(--cf-theme-dark);
+  }
+}

@@ -1,0 +1,21 @@
+@use "../utils" as *;
+
+/*----------------------------------------*/
+/*  05. Section Tilte CSS START
+/*----------------------------------------*/
+
+.section-title {
+  text-align: center;
+  color: var(--cf-theme-dark);
+  p {
+    color: var(--cf-theme-primary);
+    margin-bottom: 5px;
+    font-size: var(--cf-fs-h4);
+  }
+  h2 {
+    font-weight: var(--cf-fw-bold);
+  }
+  &.left {
+    text-align: left;
+  }
+}

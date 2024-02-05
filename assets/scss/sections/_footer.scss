@@ -1,0 +1,14 @@
+/*----------------------------------------*/
+/*  18. footer CSS START
+/*----------------------------------------*/
+
+footer {
+  background: var(--cf-theme-primary);
+  padding: 37px 0;
+  color: var(--cf-theme-white);
+  text-align: center;
+  .copy-right-text {
+    margin-top: 10px;
+    font-weight: 400;
+  }
+}

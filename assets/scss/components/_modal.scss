@@ -1,0 +1,88 @@
+@use "../utils" as *;
+
+/*----------------------------------------*/
+/*  04. Modal Css Start
+/*----------------------------------------*/
+
+.axo-popup .mfp-content {
+  background: var(--cf-theme-white);
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 20px;
+  @media #{$xs} {
+    width: 300px;
+  }
+  .mfp-close {
+    background: var(--cf-theme-white);
+    color: var(--cf-theme-dark);
+    border-radius: 50%;
+    margin: 10px;
+  }
+  .content {
+    .price {
+      color: var(--cf-theme-dark);
+      font-size: 20px;
+      margin-top: 0 !important;
+    }
+    .img {
+      margin-top: -2px;
+      img {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+      }
+    }
+    .des {
+      padding: 20px 30px 20px;
+      span {
+        color: var(--cf-theme-primary);
+        font-size: 18px;
+      }
+      h4 {
+        color: var(--cf-theme-dark);
+        margin-bottom: 10px;
+        font-size: 24px;
+        line-height: 1.3;
+        @media #{$xs} {
+          font-size: 18px;
+        }
+      }
+      .category {
+        margin: 0;
+        margin-bottom: 5px;
+      }
+      p {
+        margin-top: 20px;
+      }
+      .d-flex {
+        display: flex;
+        @media #{$xs} {
+          display: block;
+        }
+      }
+      ul {
+        li {
+          margin-right: 10px;
+          display: flex;
+          align-items: center;
+          font-size: 14px;
+          @media #{$xs} {
+            margin-right: 0;
+            margin-bottom: 5px;
+          }
+          a {
+            color: var(--cf-theme-primary);
+            font-size: 14px;
+          }
+          &::before {
+            content: "";
+            height: 7px;
+            width: 7px;
+            display: block;
+            border-radius: 50%;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}

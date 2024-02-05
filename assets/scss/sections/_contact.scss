@@ -1,0 +1,43 @@
+/*----------------------------------------*/
+/*  17. contact CSS START
+/*----------------------------------------*/
+
+#contact {
+  margin-bottom: 120px;
+  .info-details {
+    margin-top: 36px;
+    li {
+      margin-bottom: 30px;
+      h4 {
+        color: var(--cf-theme-dark);
+      }
+    }
+  }
+  .contact-form {
+    background: var(--cf-theme-primary);
+    padding: 100px 50px 50px;
+    border-radius: 20px;
+    input,
+    textarea {
+      width: 100%;
+      color: var(--cf-theme-white);
+      font-weight: var(--cf-fw-light);
+      font-family: var(--cf-ff-primary);
+      font-size: 18px;
+      border: 0;
+      border-bottom: 1.5px solid #a6a6a6;
+      background: transparent;
+      padding: 15px 0;
+      margin-bottom: 40px;
+    }
+    button {
+      background: var(--cf-theme-dark);
+      color: var(--cf-theme-white);
+      font-weight: var(--cf-fw-regular);
+      font-family: var(--cf-ff-primary);
+      font-size: 18px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@use "../utils" as *;
+
+/*----------------------------------------*/
+/*  03. Button Css Start
+/*----------------------------------------*/
+
+.cf-btn {
+  background: var(--cf-theme-primary);
+  border: 1px solid var(--cf-theme-primary);
+  border-radius: 55px;
+  transition: all 0.3s ease-in-out;
+  color: var(--cf-theme-white);
+  padding: 20px 43px;
+  box-sizing: border-box;
+  color: var(--cf-theme-white);
+  display: inline-block;
+  &:hover {
+    color: var(--cf-theme-white);
+    transform: translateY(-0.15rem);
+    box-shadow: 0 0.25rem 0.75rem rgb(30 34 40 / 15%);
+  }
+}

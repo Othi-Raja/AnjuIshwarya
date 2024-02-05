@@ -1,0 +1,62 @@
+@use "../utils" as *;
+
+/*----------------------------------------*/
+/*  13. portfolio CSS START
+/*----------------------------------------*/
+
+#portfolio {
+  margin-bottom: 120px;
+  .portfolio-container {
+    .portfolio-items {
+      width: 100%;
+      margin: auto;
+    }
+    .filter-btn {
+      text-align: center;
+      margin: 24px 0 40px;
+      color: var(--cf-theme-dark);
+      a {
+        margin: 15px 40px 0 0;
+        display: inline-block;
+        @media #{$sm,$xs} {
+          margin: 15px 20px 0 0;
+        }
+        &.active {
+          color: var(--cf-theme-primary);
+          &::after {
+            content: "";
+            background: var(--cf-theme-primary);
+            height: 6px;
+            width: 6px;
+            border-radius: 10px;
+            margin-left: 5px;
+            display: inline-block;
+          }
+        }
+      }
+    }
+    .item {
+      overflow: hidden;
+      margin: 10px;
+      border-radius: 20px;
+      width: calc(33% - 20px);
+      @media #{$md} {
+        width: calc(50% - 20px);
+      }
+      @media #{$sm,$xs} {
+        width: calc(100% - 20px);
+      }
+      a {
+        img {
+          width: 100%;
+          border-radius: 20px;
+          transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+          vertical-align: middle;
+          &:hover {
+            transform: scale3d(1.1, 1.1, 1.1);
+          }
+        }
+      }
+    }
+  }
+}

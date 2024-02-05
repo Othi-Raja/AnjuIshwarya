@@ -1,0 +1,236 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("../fonts/flaticon.ttf") format("truetype"),
+url("./flaticon.woff") format("woff"),
+url("./flaticon.woff2") format("woff2"),
+url("./flaticon.eot") format("embedded-opentype"),
+url("./flaticon.svg") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-industrial-robot:before {
+    content: "\f101";
+}
+.flaticon-industrial:before {
+    content: "\f102";
+}
+.flaticon-manufacturing:before {
+    content: "\f103";
+}
+.flaticon-helmet:before {
+    content: "\f104";
+}
+.flaticon-container:before {
+    content: "\f105";
+}
+.flaticon-windmill:before {
+    content: "\f106";
+}
+.flaticon-plus:before {
+    content: "\f107";
+}
+.flaticon-right-arrow:before {
+    content: "\f108";
+}
+.flaticon-play:before {
+    content: "\f109";
+}
+.flaticon-facebook:before {
+    content: "\f10a";
+}
+.flaticon-twitter:before {
+    content: "\f10b";
+}
+.flaticon-youtube:before {
+    content: "\f10c";
+}
+.flaticon-pinterest:before {
+    content: "\f10d";
+}
+.flaticon-spotify:before {
+    content: "\f10e";
+}
+.flaticon-linkedin:before {
+    content: "\f10f";
+}
+.flaticon-behance:before {
+    content: "\f110";
+}
+.flaticon-skype:before {
+    content: "\f111";
+}
+.flaticon-whatsapp:before {
+    content: "\f112";
+}
+.flaticon-calendar:before {
+    content: "\f113";
+}
+.flaticon-envelope:before {
+    content: "\f114";
+}
+.flaticon-engineering:before {
+    content: "\f115";
+}
+.flaticon-industrial-robot-1:before {
+    content: "\f116";
+}
+.flaticon-pushcart:before {
+    content: "\f117";
+}
+.flaticon-industrial-robot-2:before {
+    content: "\f118";
+}
+.flaticon-worker:before {
+    content: "\f119";
+}
+.flaticon-chip:before {
+    content: "\f11a";
+}
+.flaticon-container-1:before {
+    content: "\f11b";
+}
+.flaticon-lever:before {
+    content: "\f11c";
+}
+.flaticon-warehouse:before {
+    content: "\f11d";
+}
+.flaticon-tank-truck:before {
+    content: "\f11e";
+}
+.flaticon-crusher:before {
+    content: "\f11f";
+}
+.flaticon-pumpjack:before {
+    content: "\f120";
+}
+.flaticon-factory:before {
+    content: "\f121";
+}
+.flaticon-stock:before {
+    content: "\f122";
+}
+.flaticon-nuclear:before {
+    content: "\f123";
+}
+.flaticon-conveyor-belt:before {
+    content: "\f124";
+}
+.flaticon-left-arrow:before {
+    content: "\f125";
+}
+.flaticon-location-pin:before {
+    content: "\f126";
+}
+.flaticon-timer:before {
+    content: "\f127";
+}
+.flaticon-tick:before {
+    content: "\f128";
+}
+.flaticon-download:before {
+    content: "\f129";
+}
+.flaticon-ai:before {
+    content: "\f12a";
+}
+.flaticon-telephone-call:before {
+    content: "\f12b";
+}
+.flaticon-envelope-1:before {
+    content: "\f12c";
+}
+.flaticon-open-book:before {
+    content: "\f12d";
+}
+.flaticon-book:before {
+    content: "\f12e";
+}
+.flaticon-open-book-1:before {
+    content: "\f12f";
+}
+.flaticon-menu:before {
+    content: "\f130";
+}
+.flaticon-quote:before {
+    content: "\f131";
+}
+.flaticon-pen:before {
+    content: "\f132";
+}
+.flaticon-network:before {
+    content: "\f133";
+}
+.flaticon-pencil:before {
+    content: "\f134";
+}
+.flaticon-social-marketing:before {
+    content: "\f135";
+}
+.flaticon-view:before {
+    content: "\f136";
+}
+.flaticon-conversation:before {
+    content: "\f137";
+}
+.flaticon-chat:before {
+    content: "\f138";
+}
+.flaticon-send:before {
+    content: "\f139";
+}
+.flaticon-arrow:before {
+    content: "\f13a";
+}
+.flaticon-arrow-1:before {
+    content: "\f13b";
+}
+.flaticon-globe:before {
+    content: "\f13c";
+}
+.flaticon-share:before {
+    content: "\f13d";
+}
+.flaticon-reply:before {
+    content: "\f13e";
+}
+.flaticon-user:before {
+    content: "\f13f";
+}
+.flaticon-share-1:before {
+    content: "\f140";
+}
+.flaticon-reply-1:before {
+    content: "\f141";
+}
+.flaticon-user-1:before {
+    content: "\f142";
+}
+.flaticon-share-2:before {
+    content: "\f143";
+}
+.flaticon-location:before {
+    content: "\f144";
+}
+.flaticon-pin:before {
+    content: "\f145";
+}
+.flaticon-email:before {
+    content: "\f146";
+}
+.flaticon-email-1:before {
+    content: "\f147";
+}
+.flaticon-phone:before {
+    content: "\f148";
+}

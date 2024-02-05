@@ -1,0 +1,17 @@
+//transition
+@mixin transition($time) {
+  transition: all $time ease-out 0s;
+}
+
+// Flexbox display
+@mixin flexbox($align, $content) {
+  display: -webkit-flex;
+  display: flex;
+  align-items: $align;
+  justify-content: $content;
+}
+
+// Box shadows
+@mixin box-shadow($shadow) {
+  box-shadow: $shadow;
+}

@@ -1,0 +1,25 @@
+@use "../utils" as *;
+
+/*----------------------------------------*/
+/*  15. client CSS START
+/*----------------------------------------*/
+
+#client {
+  margin: 120px 0;
+  .client-container {
+    border-radius: 20px;
+    padding-top: 10px;
+    a {
+      height: 100%;
+    }
+    img,
+    a {
+      @include transition(0.6s);
+      max-width: 100%;
+    }
+    .swiper-slide-active img,
+    .swiper-slide:hover img {
+      filter: brightness(0) invert(1);
+    }
+  }
+}

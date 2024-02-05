@@ -1,0 +1,77 @@
+@use "../utils" as *;
+
+/*----------------------------------------*/
+/*  10. hero CSS START
+/*----------------------------------------*/
+
+#home {
+  position: relative;
+  .col-lg-7.col-12 {
+    z-index: 2;
+    position: relative;
+  }
+
+  h1 {
+    padding: 155px 0 0;
+  }
+  .short-bio {
+    margin-top: 24px;
+    margin-bottom: 40px;
+  }
+  .counter {
+    margin-top: 80px;
+    padding: 0 0 56px;
+    p {
+      font-size: 20px;
+    }
+    h2 {
+      font-size: var(--cf-fs-h2);
+    }
+    @media #{$sm,$xs} {
+      h2 {
+        font-size: 36px;
+      }
+    }
+  }
+  .extra-bg {
+    display: none;
+    height: 100%;
+    background: var(--cf-theme-primary);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 70px;
+    z-index: 0;
+    @media #{$md,$sm,$xs} {
+      display: block;
+    }
+  }
+  .hero-right {
+    height: 100%;
+    top: 0;
+    right: 0px;
+    position: absolute;
+    @media #{$md,$sm,$xs} {
+      display: none;
+    }
+    &-bg {
+      height: 100%;
+      background: var(--cf-theme-primary);
+      width: 360px;
+      @media #{$md,$sm,$xs} {
+        width: 120px;
+      }
+    }
+    img {
+      position: absolute;
+      bottom: 0;
+      right: -60px;
+      max-width: 500px;
+      filter: grayscale(100%);
+      @media #{$md,$sm,$xs} {
+        display: none;
+      }
+    }
+  }
+}

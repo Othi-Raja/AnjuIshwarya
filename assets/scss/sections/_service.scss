@@ -1,0 +1,48 @@
+@use "../utils" as *;
+
+/*----------------------------------------*/
+/*  11. service CSS START
+/*----------------------------------------*/
+
+#services {
+  margin-top: 120px;
+  .card-container {
+    margin: 50px 0 180px;
+  }
+  .service-card {
+    position: relative;
+    @include box-shadow(0px 20px 35px 10px rgba(4, 9, 30, 0.05));
+    border-radius: 20px;
+    padding: 36px;
+    margin-bottom: 30px;
+    color: var(--cf-theme-dark);
+    @include transition(0.3s);
+    .icon-container {
+      width: 72px;
+      svg {
+        color: var(--cf-theme-dark);
+      }
+    }
+    h3 {
+      margin: 25px 0 17px;
+    }
+    &:hover {
+      background: var(--cf-theme-primary);
+      color: var(--cf-theme-white);
+      p {
+        color: var(--cf-theme-white);
+      }
+      svg {
+        filter: invert(100%);
+      }
+    }
+    a {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 3;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@use "../utils" as *;
+
+/*----------------------------------------*/
+/*  12. about CSS START
+/*----------------------------------------*/
+
+#about {
+  margin-bottom: 200px;
+  .section-title {
+    margin-bottom: 25px;
+    @media #{$sm,$xs} {
+      margin-top: 60px;
+    }
+  }
+  .cf-btn {
+    padding: 15px 40px;
+  }
+  .watch-video {
+    margin-left: 30px;
+    a {
+      margin-right: 10px;
+      color: var(--cf-theme-dark);
+      font-size: 50px;
+      display: contents;
+    }
+    p {
+      margin-bottom: 0;
+      margin-left: 10px;
+      color: var(--cf-theme-dark);
+    }
+  }
+  .btn-container {
+    margin-top: 50px;
+  }
+  .author-image-container {
+    position: relative;
+    height: 100%;
+    .image-bg {
+      position: absolute;
+      width: 270px;
+      height: 270px;
+      background-color: var(--cf-theme-primary);
+      bottom: -65px;
+      left: -32px;
+      z-index: 0;
+      border-radius: 20px;
+      @media #{$md} {
+        width: 200px;
+        height: 200px;
+        bottom: 183px;
+        left: -47px;
+      }
+    }
+    .image-area {
+      img {
+        border-radius: 20px;
+        position: relative;
+        max-width: 100%;
+        // left: 40px;
+        top: 0;
+      }
+    }
+  }
+}
