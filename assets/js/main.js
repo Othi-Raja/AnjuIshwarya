@@ -341,3 +341,20 @@
       axo.preloader();
     });
 })(jQuery);
+
+
+const imageArea = document.getElementById('interactive-image');
+
+imageArea.addEventListener('mousemove', (e) => {
+  const { offsetX, offsetY, target } = e;
+  const { clientWidth, clientHeight } = target;
+
+  const xPos = (offsetX / clientWidth - 0.5) * 20; // Adjust the multiplier for movement sensitivity
+  const yPos = (offsetY / clientHeight - 0.5) * 20; // Adjust the multiplier for movement sensitivity
+
+  target.style.transform = `translate(${xPos}px, ${yPos}px)`;
+});
+
+imageArea.addEventListener('mouseleave', () => {
+  imageArea.querySelector('img').style.transform = 'translate(0, 0)';
+});
