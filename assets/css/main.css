@@ -1991,7 +1991,7 @@ body.intro #preloader .loader_line {
   background: transparent;
   position: fixed;
   right: 50px;
-  bottom: 50px;
+  bottom: 90px;
   height: 46px;
   width: 46px;
   cursor: pointer;
