@@ -2466,6 +2466,9 @@ only screen and (min-width: 576px) and (max-width: 767px),
   .hide{
     display: none;
   }
+  #about{
+    margin-bottom: 100px;
+  }
 }
 #about .section-title {
   margin-bottom: 25px;

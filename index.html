@@ -23,15 +23,14 @@
         <a href="#home">Deepika Saini</a>
       </div>
       <ul class="menus">
-        <li class="current"><a href="#services">Services</a></li>
-        <li><a href="#portfolio">About</a></li>
-        <li><a href="#testimonials">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li class="current"><a href="#services" onclick="closeMenu()">Services</a></li>
+        <li><a href="#about" onclick="closeMenu()">About</a></li>
+        <li><a href="#testimonials" onclick="closeMenu()">Experience</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
       </ul>
       <div class="social-icons">
         <a href="https://www.instagram.com/deepika.saini16/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/deepika-saini-30912420b/" target="_blank"><i
-            class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/deepika-saini-30912420b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
       </div>
       <div class="toggle">
         <span></span>
@@ -354,7 +353,17 @@
     </svg>
   </div>
   <div class="cursor"></div>
-  
+  <script>
+  function closeMenu() {
+    // Find the .navbar-toggler element and click it
+    var toggleButton = document.querySelector('.toggle');
+
+    // Check if the element exists before trying to manipulate it
+    if (toggleButton) {
+      toggleButton.click();
+    }
+  }
+  </script>
   <script src="./assets/js/jquery.min.js"></script>
   <script src="./assets/js/swiper-bundle.min.js"></script>
   <script src="./assets/js/imagesloaded-pkgd.min.js"></script>
