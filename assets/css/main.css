@@ -2390,11 +2390,11 @@ only screen and (min-width: 576px) and (max-width: 767px),
 /*  11. service CSS START
 /*----------------------------------------*/
 #services {
-  margin-top: 50px;
+  margin-top: 67px;
 }
 
 #services .card-container {
-  margin: 25px 0 180px;
+  margin: 20px 0 180px;
 }
 
 #services .service-card {
