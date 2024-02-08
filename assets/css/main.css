@@ -212,7 +212,7 @@ button:focus {
 .capitalize {
   text-transform: capitalize;
 }
-
+ 
 input,
 textarea {
   outline: none;
@@ -1274,7 +1274,9 @@ img {
     flex: 0 0 8.333333%;
     max-width: 8.333333%;
   }
-
+/* .bgImage{
+  background: url(/learn-inspiration.svg) no-repeat center left;
+} */
   .col-md-2 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 16.666667%;
@@ -2418,7 +2420,9 @@ only screen and (min-width: 576px) and (max-width: 767px),
 #services .service-card h3 {
   margin: 25px 0 17px;
 }
-
+.softratelink{
+  color: rgb(204, 204, 204);
+}
 #services .service-card:hover {
   background: var(--cf-theme-primary);
   color: var(--cf-theme-white);
@@ -2446,10 +2450,23 @@ only screen and (min-width: 576px) and (max-width: 767px),
 /*  12. about CSS START
 /*----------------------------------------*/
 #about {
-  margin-bottom: 90px;
+  margin-bottom: 80px;
   margin-top: -100px;
 }
-
+@media (max-width: 480px){
+  #about {
+    margin-bottom: 80px;
+    margin-top: -200px;
+  }
+  .ressize{
+    font-size: small;
+    padding: 14px;
+    text-align: start;
+  }
+  .hide{
+    display: none;
+  }
+}
 #about .section-title {
   margin-bottom: 25px;
 }
@@ -2495,7 +2512,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
   position: absolute;
   width: 270px;
   height: 270px;
-  background-color: var(--cf-theme-primary);
+  background: url(/bob.svg);
   bottom: -65px;
   left: -32px;
   z-index: 0;
@@ -2714,7 +2731,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 /*  15. client CSS START
 /*----------------------------------------*/
 #client {
-  margin: 55px 0;
+  margin-top: 70px;
 }
 
 #client .client-container {
@@ -2799,9 +2816,9 @@ only screen and (min-width: 576px) and (max-width: 767px),
 /*----------------------------------------*/
 /*  17. contact CSS START
 /*----------------------------------------*/
-#contact {
+/* #contact {
   margin-bottom: 30px;
-}
+} */
 
 #contact .info-details {
   margin-top: 36px;
@@ -2850,7 +2867,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 /*----------------------------------------*/
 footer {
   background: var(--cf-theme-primary);
-  padding: 37px 0;
+  /* padding: 15px 0; */
   color: var(--cf-theme-white);
   text-align: center;
 }
