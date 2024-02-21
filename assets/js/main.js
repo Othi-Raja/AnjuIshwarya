@@ -358,3 +358,8 @@ imageArea.addEventListener('mousemove', (e) => {
 imageArea.addEventListener('mouseleave', () => {
   imageArea.querySelector('img').style.transform = 'translate(0, 0)';
 });
+
+
+function openLink(url){
+   window.open(url,"_blank")
+}

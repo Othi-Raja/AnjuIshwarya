@@ -2033,7 +2033,20 @@ body.intro #preloader .loader_line {
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
+.swiper-slide:hover{
+   /* border: .8px solid gray; */
+   transition: all 1s linear;
+}
+.service-card{
+  cursor: pointer;
+}
+.slider-item:hover h6,
+.slider-item:hover small,
+.slider-item:hover p {
+  color: black;
+  transition: all 1s ease;
 
+}
 .progress:hover::after {
   position: absolute;
   font-family: "Font Awesome 5 Pro";
