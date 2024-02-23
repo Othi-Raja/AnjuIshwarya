@@ -27,10 +27,10 @@
         <a href="#home">Deepika Saini</a>
       </div>
       <ul class="menus">
-        <li class="current"><a href="#services" >Services</a></li>
-        <li><a href="#about" onclick="closeMenu()">About</a></li>
-        <li><a href="#testimonials" onclick="closeMenu()">Experience</a></li>
-        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+        <li class="current" onclick="removeDisplayBlock()"><a href="#services" >Services</a></li>
+        <li><a href="#about" onclick="removeDisplayBlock()">About</a></li>
+        <li><a href="#testimonials" onclick="removeDisplayBlock()">Experience</a></li>
+        <li><a href="#contact" onclick="removeDisplayBlock()">Contact</a></li>
       </ul>
       <div class="social-icons">
         <a href="https://www.instagram.com/deepika.saini16/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
@@ -364,7 +364,15 @@
   <script>
       AOS.init();
  
+      function removeDisplayBlock() {
+    var menus = document.querySelector('.menus');
+    menus.style.display = 'none'; // Set to 'none' to hide the element
 
+    var header = document.querySelector('header');
+    header.classList.remove('active'); // Remove the 'active' class from the header
+}
+
+ 
   </script>
   <script src="./assets/js/jquery.min.js"></script>
   <script src="./assets/js/swiper-bundle.min.js"></script>
