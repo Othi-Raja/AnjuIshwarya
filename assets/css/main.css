@@ -1990,10 +1990,11 @@ body.intro #preloader .loader_line {
 .progress {
   background: transparent;
   position: fixed;
-  right: 50px;
+  right: 8px;
   bottom: 90px;
   height: 46px;
   width: 46px;
+  margin-bottom: 10px;
   cursor: pointer;
   display: block;
   border-radius: 50px;
@@ -2006,6 +2007,7 @@ body.intro #preloader .loader_line {
   transform: translateY(15px);
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
+  color: gray;
 }
 
 .progress.active {
