@@ -2498,7 +2498,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 /*----------------------------------------*/
 #about {
   margin-bottom: 80px;
-  margin-top: -100px;
+  margin-top: -120px;
 }
 /* #contact{
   margin-top: 40px;
@@ -2517,10 +2517,10 @@ only screen and (min-width: 576px) and (max-width: 767px),
 @media (max-width: 480px){
   #about {
     margin-bottom: 80px;
-    margin-top: -70px;
+    /* margin-top: -150px; */
   }
   #contact{
-margin-top: -20px;
+margin-top: -120px;
   }
   .info-details{
     text-align: center;
