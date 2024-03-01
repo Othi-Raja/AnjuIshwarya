@@ -2500,9 +2500,9 @@ only screen and (min-width: 576px) and (max-width: 767px),
   margin-bottom: 80px;
   margin-top: -100px;
 }
-#contact{
+/* #contact{
   margin-top: 40px;
-}
+} */
 @media (max-width: 1000px){
   #client{
     display: none;
@@ -2511,15 +2511,15 @@ only screen and (min-width: 576px) and (max-width: 767px),
 @media (max-width: 480px){
   #about {
     margin-bottom: 80px;
-    margin-top: -100px;
+    margin-top: -138px;
   }
   .info-details{
     text-align: center;
   }
 
-  #contact{
-    margin-top: 90px;
-  }
+  /* #contact{
+    margin-top: 45px;
+  } */
   .ressize{
     font-size: small;
     padding: 14px;
@@ -2757,6 +2757,15 @@ only screen and (min-width: 576px) and (max-width: 767px),
     -webkit-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
   }
+  #testimonials .testimonial-sliders {
+    /* margin-top: 50px; */
+    /* -webkit-box-shadow: 10px 20px 35px 10px rgba(4, 9, 30, 0.05); */
+    /* -webkit-box-shadow: 0px 20px 35px 10px rgba(4, 9, 30, 0.07);
+    box-shadow: 0px 20px 35px 10px rgba(4, 9, 30, 0.07); */
+    border-radius: 20px;
+    /* padding-bottom: 30px; */
+    padding-left: 10px;padding-right: 10px;
+  }
   
 }
 
@@ -2772,9 +2781,12 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 #testimonials .testimonial-sliders {
   /* margin-top: 50px; */
-  -webkit-box-shadow: 10px 20px 35px 10px rgba(4, 9, 30, 0.05);
-  box-shadow: 0px 20px 35px 10px rgba(4, 9, 30, 0.05);
+  /* -webkit-box-shadow: 10px 20px 35px 10px rgba(4, 9, 30, 0.05); */
+  /* -webkit-box-shadow: 0px 20px 35px 10px rgba(4, 9, 30, 0.07);
+  box-shadow: 0px 20px 35px 10px rgba(4, 9, 30, 0.07); */
   border-radius: 20px;
+  padding-bottom: 30px;
+  padding-left: 10px;padding-right: 10px;
 }
 
 #testimonials .slider-item {
@@ -2782,8 +2794,9 @@ only screen and (min-width: 576px) and (max-width: 767px),
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* -webkit-box-shadow: 0px 20px 35px 10px rgba(4, 9, 30, 0.07);
-  box-shadow: 0px 20px 35px 10px rgba(4, 9, 30, 0.07); */
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+ 
+ 
 }
 
 #testimonials .slider-item .author-info {
