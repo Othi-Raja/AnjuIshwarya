@@ -2039,15 +2039,23 @@ body.intro #preloader .loader_line {
 .swiper-slide:hover{
    /* border: .8px solid gray; */
    transition: all 1s linear;
+   font-weight: lighter;
 }
 .service-card{
   cursor: pointer;
 }
-
+.author-info-content > p  {
+  color: black;
+ 
+}
+.slider-item{
+  font-weight: lighter;
+  color: black;
+}
 .slider-item:hover h6,
 .slider-item:hover small,
-.slider-item:hover p {
-  color: black;
+.slider-item:hover p,.slider-item:hover .author-info {
+  color: gray;
   transition: all 1s ease;
 
 }
@@ -2498,7 +2506,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 /*----------------------------------------*/
 #about {
   margin-bottom: 80px;
-  margin-top: -170px;
+  margin-top: -90px;
 }
 /* #contact{
   margin-top: 40px;
@@ -2803,6 +2811,7 @@ margin-top: -140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: black;
   box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
  
  
@@ -2998,4 +3007,5 @@ footer .copy-right-text {
 
 .hoverlink:hover{
 color: gray;
+cursor: pointer;
 }

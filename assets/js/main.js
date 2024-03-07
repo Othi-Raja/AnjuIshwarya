@@ -5,6 +5,11 @@
  *	Copyright © axo by codeefly. All Rights Reserved.
  **/
 
+ function openLinkInBlank(link) {
+  // Open the link in a new window or tab
+  window.open(link, '_blank');
+}
+
 (function ($) {
   "use strict";
   var axo = {
