@@ -9,7 +9,14 @@
   // Open the link in a new window or tab
   window.open(link, '_blank');
 }
+ 
+  // JavaScript for horizontal scroll
+  const blogRow = document.querySelector('.blogrow');
 
+  function scrollCard(direction) {
+    blogRow.scrollLeft += direction * 300; // Adjust scrolling speed
+  }
+  
 (function ($) {
   "use strict";
   var axo = {
@@ -19,7 +26,7 @@
         axo.smoothScrolling(),
         axo.customMouse(),
         axo.scrollToActiveNav(),
-        axo.feedBackSlider(),
+        axo.feedBackSlider(), 
         axo.clientSlider(),
         axo.filter(),
         axo.counter(),
@@ -183,6 +190,7 @@
         },
       });
     },
+    
     clientSlider() {
       new Swiper(".client-slider", {
         spaceBetween: 1,
