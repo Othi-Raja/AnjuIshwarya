@@ -2368,7 +2368,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
   right: -60px;
   max-width: 500px;
   -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  filter: grayscale(10%);
 }
 @media only screen and (min-width: 768px) and (max-width: 991px),
 only screen and (min-width: 576px) and (max-width: 767px),

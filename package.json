@@ -1,0 +1,14 @@
+{
+  "name": "anju-ishwarya-r",
+  "version": "1.0.0",
+  "description": "anju-ishwarya-r personal portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "anju-ishwarya-r"
+  ],
+  "author": "anju-ishwarya-r",
+  "license": "ISC"
+}
