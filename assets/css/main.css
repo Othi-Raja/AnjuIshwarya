@@ -1086,6 +1086,9 @@ img {
   opacity: 1;
 }
 @media (max-width:480px) {
+  .hideOnMobile{
+    display: none;
+  }
  .blogArrow {
     width: 30px;
     height: 30px;
@@ -2277,6 +2280,7 @@ header.active .toggle span:nth-child(3) {
   margin-top: 24px;
   margin-bottom: 40px;
   width: 60%;
+       color: rgba(118, 118, 185, 0.933)ea;
 }
 #home .counter {
   margin-top: 80px;
@@ -2417,9 +2421,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
     margin-bottom: 80px;
     /* margin-top: -150px; */
   }
-  .short-bio{
-    visibility: hidden;
-  }
   #home .hero-right img {
   position: absolute;
   bottom: 0;
@@ -2485,9 +2486,9 @@ margin-top: -30px;
   }
 }
 @media (max-width:420px) {
-  .cf-btn{
+  /* .cf-btn{
     visibility: hidden;
-  }
+  } */
 }
 @media (max-width:768px) {
   #home .hero-right img {
@@ -2848,6 +2849,10 @@ cursor: pointer;
         grid-template-columns: 1fr;
         gap: 40px;
       }
+      .mrow {
+        grid-template-columns: 1fr;
+        gap:40px;
+      }
       .about-section h2 {
         font-size: 28px;
       }
@@ -2864,9 +2869,10 @@ cursor: pointer;
     .section-header h2 {
       font-size: 48px;
       font-weight: 800;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: white;
+      /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+      /* -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; */
       background-clip: text;
       margin-bottom: 10px;
       margin-top: 40px;
